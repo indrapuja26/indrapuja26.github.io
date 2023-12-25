@@ -484,7 +484,8 @@ span {
 }
 
 .contact form .input-box input,
-.contact form textarea {
+.contact form textarea,
+.contact form .input-box-pesan {
   width: 100%;
   padding: 1.5rem;
   font-size: 1.6rem;
@@ -508,6 +509,10 @@ span {
 .contact form .btn {
   margin-top: 2rem;
   cursor: pointer;
+}
+
+.contact form .input-box-pesan {
+  height: 200px;
 }
 
 .footer {

@@ -181,7 +181,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
 
-      <form action="#" name="submit-to-google-sheet">
+      <form action="#" name="wpu-contact-form">
         <div class="input-box">
           <input type="text" placeholder="Full Name" class="form-control" id="name" aria-describedby="name" name="nama" />
           <input type="email" placeholder="Email Address" class="form-control" id="email" aria-describedby="email" name="email" />
@@ -192,7 +192,10 @@
           <input type="text" placeholder="Email Subject" class="form-control" id="name" aria-describedby="name" name="nama" />
         </div>
 
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <div class="input-box-pesan">
+          <input type="text" name="pesan" id="" cols="30" rows="10" placeholder="Your Message" />
+        </div>
+
         <button type="submit" class="btn btn-primary btn-kirim">Send Message</button>
 
         <button class="btn btn-loading d-none" type="button" disabled>
@@ -214,8 +217,8 @@
     </footer>
 
     <script>
-      const scriptURL = "https://script.google.com/macros/s/AKfycbwlCOv3QT8qeMNoeSbyb_J5CDfjcvWd3tCEnpEcbWGzhkee5RKEP42wxiffxYdUr4DWlA/exec";
-      const form = document.forms["submit-to-google-sheet"];
+      const scriptURL = "https://script.google.com/macros/s/AKfycbyXck70GYCAw5LNamiupmQ41STNdJtijjpKdZjAQGPWuINihm-48V29XaWYijEIsQeZFA/exec";
+      const form = document.forms["wpu-contact-form"];
       const btnKirim = document.querySelector(".btn-kirim");
       const btnLoading = document.querySelector(".btn-loading");
       const myAlert = document.querySelector(".my-alert");
